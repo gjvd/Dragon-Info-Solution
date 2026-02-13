@@ -102,9 +102,9 @@ const Career = () => {
                 <div className="mt-16 text-center bg-[#05051a] p-12 rounded-2xl border border-white/5">
                     <h3 className="text-2xl font-bold text-white mb-4">Don't see the right role?</h3>
                     <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-                        We're always looking for talent. Send your resume to careers@dragoninfo.com and we'll keep you in mind for future openings.
+                        We're always looking for talent. Send your resume to info@dragon.com and we'll keep you in mind for future openings.
                     </p>
-                    <a href="mailto:careers@dragoninfo.com" className="inline-block px-8 py-3 rounded-full border border-white/20 hover:bg-white/10 text-white transition-colors">
+                    <a href="mailto:info@dragon.com" className="inline-block px-8 py-3 rounded-full border border-white/20 hover:bg-white/10 text-white transition-colors">
                         Contact Recruiting
                     </a>
                 </div>

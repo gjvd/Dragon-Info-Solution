@@ -32,6 +32,7 @@ const Footer = () => {
                         <ul className="space-y-3 text-gray-400">
                             <li><Link to="/" className="hover:text-blue-400 transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>Home</Link></li>
                             <li><Link to="/company" className="hover:text-blue-400 transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>Company</Link></li>
+                            <li><Link to="/services" className="hover:text-blue-400 transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>Services</Link></li>
                             <li><Link to="/career" className="hover:text-blue-400 transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>Career</Link></li>
                             <li><Link to="/contact" className="hover:text-blue-400 transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>Contact</Link></li>
                         </ul>
@@ -42,7 +43,7 @@ const Footer = () => {
                         <ul className="space-y-4 text-gray-400">
                             <li className="flex items-start gap-3">
                                 <Mail className="w-5 h-5 text-blue-500 mt-1 shrink-0" />
-                                <span>contact@dragoninfo.com</span>
+                                <span>info@dragon.com</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <Phone className="w-5 h-5 text-blue-500 mt-1 shrink-0" />

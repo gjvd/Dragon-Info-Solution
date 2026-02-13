@@ -9,8 +9,20 @@ import {
     Coffee,
     Monitor,
     Layout,
-    Database,
     Server,
+    Briefcase,
+    UserCheck,
+    UserPlus,
+    Brain,
+    Terminal,
+    Tablet,
+    PenTool,
+    Video,
+    CheckCircle,
+    Bug,
+    TrendingUp,
+    Megaphone,
+    Search,
     Layers
 } from 'lucide-react';
 import CTASection from '../components/CTASection';
@@ -24,31 +36,78 @@ const Services = () => {
                 { name: "Web Development", icon: Globe, desc: "Responsive, high-performance websites tailored to your brand." },
                 { name: "App Development", icon: Smartphone, desc: "Native and cross-platform mobile applications for iOS and Android." },
                 { name: "UI/UX Design", icon: Palette, desc: "Intuitive and engaging user interfaces that drive conversion." },
-                { name: "Staffing Solutions", icon: Users, desc: "Connecting you with top-tier tech talent to scale your team." }
+                { name: "Web Design", icon: Layout, desc: "Modern and aesthetic designs that captivate your audience." }
+            ]
+        },
+        {
+            title: "Staffing Solutions",
+            items: [
+                { name: "Contract Hiring", icon: Briefcase, desc: "Flexible staffing for short-term projects." },
+                { name: "Permanent Hiring", icon: UserCheck, desc: "Long-term talent acquisition for your core team." },
+                { name: "Hybrid Model", icon: Users, desc: "A balanced approach of onsite and remote working professionals." },
+                { name: "Per-Hire", icon: UserPlus, desc: "Focused recruitment for specific critical roles." },
+                { name: "Bulk Hiring", icon: Users, desc: "Mass recruitment drives to scale your workforce quickly." }
             ]
         },
         {
             title: "Technology Stack",
             items: [
-                { name: ".NET Development", icon: Code, desc: "Robust enterprise solutions using the Microsoft .NET ecosystem." },
-                { name: "Java Development", icon: Coffee, desc: "Scalable, secure, and reliable backend systems." },
-                { name: "Microsoft Solutions", icon: Monitor, desc: "Integration and development with Microsoft technologies." },
-                { name: "CMS Development", icon: Layout, desc: "Custom Content Management Systems for easy content control." }
+                { name: ".NET", icon: Code, desc: "Robust enterprise solutions using the Microsoft ecosystem." },
+                { name: "JAVA", icon: Coffee, desc: "Scalable, secure, and reliable backend systems." },
+                { name: "Python", icon: Terminal, desc: "Versatile development for web, data science, and automation." },
+                { name: "AI/ML", icon: Brain, desc: "Intelligent solutions incorporating Artificial Intelligence and Machine Learning." }
             ]
         },
         {
-            title: "Cloud & Infrastructure",
+            title: "Cloud Services",
             items: [
-                { name: "AWS Services", icon: Cloud, desc: "Cloud infrastructure, migration, and management on Amazon Web Services." },
-                { name: "Cloud Solutions", icon: Database, desc: "Scalable cloud architectures for modern businesses." }
+                { name: "AWS", icon: Cloud, desc: "Amazon Web Services infrastructure and management." },
+                { name: "Google Cloud", icon: Cloud, desc: "GCP solutions for scalable and data-driven applications." },
+                { name: "Microsoft Azure", icon: Cloud, desc: "Enterprise-grade cloud computing and services." }
             ]
         },
         {
-            title: "Development Domains",
+            title: "Web Development",
             items: [
-                { name: "Front End", icon: Monitor, desc: "Modern, interactive client-side development (React, Vue, Angular)." },
-                { name: "Back End", icon: Server, desc: "Powerful server-side logic, APIs, and database management." },
-                { name: "Full Stack", icon: Layers, desc: "End-to-end development covering the entire technology stack." }
+                { name: "MERN | MEAN Stack", icon: Layers, desc: "Full-stack JavaScript development (MongoDB, Express, React/Angular, Node)." },
+                { name: "Front End", icon: Monitor, desc: "Engaging user interfaces using React, Vue, or Angular." },
+                { name: "Back End", icon: Server, desc: "Robust server-side architecture and API development." }
+            ]
+        },
+        {
+            title: "Mobile Development",
+            items: [
+                { name: "React Native", icon: Smartphone, desc: "Cross-platform mobile apps with a native feel." },
+                { name: "Flutter", icon: Smartphone, desc: "Beautiful, natively compiled applications from a single codebase." },
+                { name: "iOS", icon: Tablet, desc: "Native iOS development for Apple's ecosystem." },
+                { name: "Android", icon: Smartphone, desc: "Native Android development for wide reach." },
+                { name: "Swift & Kotlin", icon: Code, desc: "Modern languages for robust native mobile performance." }
+            ]
+        },
+        {
+            title: "Design Services",
+            items: [
+                { name: "UI/UX", icon: Palette, desc: "User-centric design flows and wireframes." },
+                { name: "Graphics", icon: PenTool, desc: "Visual assets, branding, and marketing materials." },
+                { name: "Web Design", icon: Layout, desc: "Website aesthetics and responsive layouts." },
+                { name: "Video Editing", icon: Video, desc: "Professional video production and post-processing." }
+            ]
+        },
+        {
+            title: "Testing | QA",
+            items: [
+                { name: "Manual Testing", icon: CheckCircle, desc: "Human-driven testing to ensure user satisfaction." },
+                { name: "Automation", icon: Bug, desc: "Automated scripts for regression and performance testing." }
+            ]
+        },
+        {
+            title: "Digital & Business Growth",
+            items: [
+                { name: "BDE-BDM", icon: TrendingUp, desc: "Business Development Executives and Managers to drive growth." },
+                { name: "CRM", icon: Users, desc: "Customer Relationship Management implementation and strategy." },
+                { name: "Digital Marketer", icon: Megaphone, desc: "Online marketing strategies to boost brand visibility." },
+                { name: "Content Writer", icon: PenTool, desc: "Engaging content for blogs, websites, and marketing." },
+                { name: "SEO", icon: Search, desc: "Search Engine Optimization to improve organic rankings." }
             ]
         }
     ];
@@ -64,7 +123,7 @@ const Services = () => {
                 <div className="container mx-auto px-6 relative z-10 text-center">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Our Services</h1>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                        Comprehensive digital solutions designed to accelerate your business growth and technological capabilities.
+                        Comprehensive digital, staffing, and design solutions tailored to accelerate your business growth.
                     </p>
                 </div>
             </div>

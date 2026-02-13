@@ -11,10 +11,10 @@ const Company = () => {
     ];
 
     const stats = [
-        { label: "Projects Completed", value: "150+", icon: CheckCircle2, color: "text-blue-400" },
+        { label: "Projects Completed", value: "100+", icon: CheckCircle2, color: "text-blue-400" },
         { label: "Client Satisfaction", value: "98%", icon: Star, color: "text-yellow-400" },
         { label: "Client Retention", value: "85%", icon: Repeat, color: "text-green-400" },
-        { label: "Years Experience", value: "5+", icon: Briefcase, color: "text-purple-400" }
+        { label: "Years Experience", value: "7+", icon: Briefcase, color: "text-purple-400" }
     ];
 
     const testimonials = [
@@ -87,11 +87,11 @@ const Company = () => {
                         <div className="relative bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm">
                             <div className="grid grid-cols-2 gap-6">
                                 <div className="text-center p-4">
-                                    <div className="text-4xl font-bold text-blue-400 mb-2">5+</div>
+                                    <div className="text-4xl font-bold text-blue-400 mb-2">7+</div>
                                     <div className="text-sm text-gray-400">Years Experience</div>
                                 </div>
                                 <div className="text-center p-4">
-                                    <div className="text-4xl font-bold text-purple-400 mb-2">150+</div>
+                                    <div className="text-4xl font-bold text-purple-400 mb-2">100+</div>
                                     <div className="text-sm text-gray-400">Projects Delivered</div>
                                 </div>
                                 <div className="text-center p-4">
