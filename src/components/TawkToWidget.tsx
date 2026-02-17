@@ -14,9 +14,11 @@ const TawkToWidget = () => {
         if (window.Tawk_API) return;
 
         // Tawk.to Script
+        // Tawk.to Script
         var Tawk_API: any = Tawk_API || {};
         Tawk_API.onLoad = function () {
             console.log("Tawk.to chat loaded");
+            window.dispatchEvent(new Event('tawk-loaded'));
         };
 
         var Tawk_LoadStart = new Date();
@@ -26,8 +28,7 @@ const TawkToWidget = () => {
         (function () {
             var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
             s1.async = true;
-            // REPLACE 'YOUR_PROPERTY_ID' WITH ACTUAL ID FROM TAWK.TO
-            s1.src = 'https://embed.tawk.to/6994a77b73d8cb1c357e3fbd/default';
+            s1.src = 'https://embed.tawk.to/6994a77b73d8cb1c357e3fbd/1jhmasevd';
             s1.charset = 'UTF-8';
             s1.setAttribute('crossorigin', '*');
             if (s0 && s0.parentNode) {
