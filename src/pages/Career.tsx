@@ -1,10 +1,14 @@
 
+import { useState } from 'react';
 import { Briefcase, MapPin, Clock, ArrowRight } from 'lucide-react';
 import bgGradient from '../assets/images/bg-4.svg';
-
 import CTASection from '../components/CTASection';
+import ApplicationForm from '../components/ApplicationForm';
 
 const Career = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedJob, setSelectedJob] = useState('');
+
     const jobs = [
         {
             title: "Senior Frontend Developer",
@@ -36,13 +40,18 @@ const Career = () => {
         }
     ];
 
+    const handleApply = (jobTitle: string) => {
+        setSelectedJob(jobTitle);
+        setIsModalOpen(true);
+    };
+
     return (
-        <div className="pt-20 min-h-screen bg-[#0a0a2e]">
+        <div className="pt-20 min-h-screen">
             {/* Header */}
             <div className="relative py-20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img src={bgGradient} alt="Background" className="w-full h-full object-cover opacity-30" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a2e] via-[#0a0a2e]/90 to-[#0a0a2e]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-transparent"></div>
                 </div>
                 <div className="container mx-auto px-6 relative z-10 text-center">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Join Our Team</h1>
@@ -92,14 +101,17 @@ const Career = () => {
                                 </div>
                                 <p className="text-gray-400 max-w-2xl">{job.desc}</p>
                             </div>
-                            <button className="shrink-0 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition-colors flex items-center gap-2">
+                            <button
+                                onClick={() => handleApply(job.title)}
+                                className="shrink-0 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition-colors flex items-center gap-2"
+                            >
                                 Apply Now <ArrowRight size={16} />
                             </button>
                         </div>
                     ))}
                 </div>
 
-                <div className="mt-16 text-center bg-[#05051a] p-12 rounded-2xl border border-white/5">
+                <div className="mt-16 text-center bg-white/5 p-12 rounded-2xl border border-white/5">
                     <h3 className="text-2xl font-bold text-white mb-4">Don't see the right role?</h3>
                     <p className="text-gray-400 mb-8 max-w-xl mx-auto">
                         We're always looking for talent. Send your resume to info@dragon.com and we'll keep you in mind for future openings.
@@ -109,7 +121,14 @@ const Career = () => {
                     </a>
                 </div>
             </div>
+
             <CTASection />
+
+            <ApplicationForm
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                jobTitle={selectedJob}
+            />
         </div>
     );
 };

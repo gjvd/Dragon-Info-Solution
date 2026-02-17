@@ -27,6 +27,7 @@ import {
 } from 'lucide-react';
 import CTASection from '../components/CTASection';
 import bgGradient from '../assets/images/bg-4.svg';
+import LiveChatCard from '../components/LiveChatCard';
 
 const Services = () => {
     const serviceCategories = [
@@ -113,12 +114,12 @@ const Services = () => {
     ];
 
     return (
-        <div className="pt-20 min-h-screen bg-[#0a0a2e]">
+        <div className="pt-20 min-h-screen">
             {/* Header */}
             <div className="relative py-20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img src={bgGradient} alt="Background" className="w-full h-full object-cover opacity-30" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a2e] via-[#0a0a2e]/90 to-[#0a0a2e]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-transparent"></div>
                 </div>
                 <div className="container mx-auto px-6 relative z-10 text-center">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Our Services</h1>
@@ -154,7 +155,7 @@ const Services = () => {
             </div>
 
             {/* Process Section */}
-            <div className="bg-[#05051a] py-20 border-y border-white/5">
+            <div className="bg-white/5 py-20 border-y border-white/5">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-white mb-4">How We Work</h2>
@@ -178,6 +179,11 @@ const Services = () => {
                         ))}
                     </div>
                 </div>
+            </div>
+
+            {/* Live Chat Section */}
+            <div className="container mx-auto px-6 py-12 flex justify-center">
+                <LiveChatCard className="w-full max-w-2xl bg-white/5 border-white/10" />
             </div>
 
             <CTASection />

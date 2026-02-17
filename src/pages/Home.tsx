@@ -39,7 +39,7 @@ const Home = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <img src={bgGradient} alt="Background" className="w-full h-full object-cover opacity-100" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#05051a] via-[#05051a]/80 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
                 </div>
 
                 <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
@@ -58,18 +58,18 @@ const Home = () => {
                         </Link>
                     </div>
 
-                    <div className="hidden md:flex justify-end relative animate-fade-in">
+                    {/* <div className="hidden md:flex justify-end relative animate-fade-in">
                         <img
                             src={dragonImage}
                             alt="Dragon Illustration"
                             className="w-full max-w-lg object-contain opacity-80 drop-shadow-[0_0_50px_rgba(59,130,246,0.3)] animate-float"
                         />
-                    </div>
+                    </div> */}
                 </div>
             </section>
 
             {/* Features Section */}
-            <section className="py-24 relative bg-[#0a0a2e]">
+            <section className="py-24 relative">
                 <div className="container mx-auto px-6">
                     <div className="mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Why Choose Us</h2>
@@ -93,7 +93,7 @@ const Home = () => {
             </section>
 
             {/* Services Section */}
-            <section id="services" className="py-24 bg-[#05051a] relative overflow-hidden">
+            <section id="services" className="py-24 bg-white/5 relative overflow-hidden">
                 {/* Decorative background elements */}
                 <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/5 blur-[100px] rounded-full pointer-events-none"></div>
 

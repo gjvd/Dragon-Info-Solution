@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, MessageSquare } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import bgGradient from '../assets/images/bg-4.svg';
+import LiveChatCard from '../components/LiveChatCard';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -23,12 +24,12 @@ const Contact = () => {
     };
 
     return (
-        <div className="pt-20 min-h-screen bg-[#0a0a2e]">
+        <div className="pt-20 min-h-screen">
             {/* Header */}
             <div className="relative py-20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img src={bgGradient} alt="Background" className="w-full h-full object-cover opacity-30" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a2e] via-[#0a0a2e]/90 to-[#0a0a2e]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-transparent"></div>
                 </div>
                 <div className="container mx-auto px-6 relative z-10 text-center">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Get in Touch</h1>
@@ -84,21 +85,11 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
-                            <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                                <MessageSquare className="text-blue-400" /> Live Chat
-                            </h3>
-                            <p className="text-gray-400 mb-6">
-                                Need immediate assistance? Our support team is available 24/7 to help you with any queries.
-                            </p>
-                            <button className="w-full py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium transition-colors">
-                                Start Chat
-                            </button>
-                        </div>
+                        <LiveChatCard />
                     </div>
 
                     {/* Contact Form */}
-                    <div className="bg-[#05051a] rounded-3xl p-8 md:p-10 border border-white/5 shadow-2xl">
+                    <div className="bg-white/5 rounded-3xl p-8 md:p-10 border border-white/5 shadow-2xl">
                         <h2 className="text-2xl font-bold text-white mb-8">Send us a Message</h2>
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">

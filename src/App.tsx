@@ -1,5 +1,6 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -8,12 +9,29 @@ import Company from './pages/Company';
 import Services from './pages/Services';
 import Career from './pages/Career';
 import Contact from './pages/Contact';
+import LoadingScreen from './components/LoadingScreen';
+import TawkToWidget from './components/TawkToWidget';
 
 function App() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return <LoadingScreen />;
+    }
+
     return (
         <Router>
             <ScrollToTop />
-            <div className="min-h-screen bg-[#0a0a2e] text-white selection:bg-blue-500/30 flex flex-col">
+            <TawkToWidget />
+            <div className="min-h-screen bg-black text-white selection:bg-blue-500/30 flex flex-col">
                 <Navbar />
                 <main className="flex-grow">
                     <Routes>

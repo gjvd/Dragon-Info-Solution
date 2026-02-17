@@ -7,10 +7,15 @@
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
+@layer base {
+  body {
+    @apply bg-gradient-to-r from-black to-blue-900 text-white antialiased;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #0a0a2e; /* Deep blue from the image */
   color: #ffffff;
   overflow-x: hidden;
 }

@@ -39,12 +39,12 @@ const Company = () => {
     ];
 
     return (
-        <div className="pt-20 min-h-screen bg-[#0a0a2e]">
+        <div className="pt-20 min-h-screen">
             {/* Header */}
             <div className="relative py-20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img src={bgGradient} alt="Background" className="w-full h-full object-cover opacity-30" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a2e] via-[#0a0a2e]/90 to-[#0a0a2e]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-transparent"></div>
                 </div>
                 <div className="container mx-auto px-6 relative z-10 text-center">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">About Dragon Info Solution</h1>
@@ -117,7 +117,7 @@ const Company = () => {
                         {team.map((member, index) => (
                             <div key={index} className="group relative overflow-hidden rounded-2xl">
                                 <img src={member.image} alt={member.name} className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a2e] via-transparent to-transparent opacity-90"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
                                 <div className="absolute bottom-0 left-0 w-full p-6">
                                     <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
                                     <p className="text-blue-400 text-sm">{member.role}</p>
@@ -151,7 +151,7 @@ const Company = () => {
 
                 {/* Mission & Vision */}
                 <div className="grid md:grid-cols-2 gap-8 mb-24">
-                    <div className="bg-[#05051a] p-8 rounded-2xl border border-white/5 hover:border-blue-500/30 transition-all">
+                    <div className="bg-white/5 p-8 rounded-2xl border border-white/5 hover:border-blue-500/30 transition-all">
                         <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 text-blue-400">
                             <Target size={24} />
                         </div>
@@ -160,7 +160,7 @@ const Company = () => {
                             To empower businesses with innovative AI software solutions that drive growth, efficiency, and competitive advantage in an ever-evolving technological landscape.
                         </p>
                     </div>
-                    <div className="bg-[#05051a] p-8 rounded-2xl border border-white/5 hover:border-purple-500/30 transition-all">
+                    <div className="bg-white/5 p-8 rounded-2xl border border-white/5 hover:border-purple-500/30 transition-all">
                         <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6 text-purple-400">
                             <Lightbulb size={24} />
                         </div>
