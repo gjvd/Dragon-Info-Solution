@@ -2,7 +2,7 @@
 import { ArrowRight, Flame, Globe, Code, BarChart, Cpu } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import bgGradient from '../assets/images/bg-4.svg';
-import dragonImage from '../assets/images/bg-3.svg';
+// import dragonImage from '../assets/images/bg-3.svg';
 
 import CTASection from '../components/CTASection';
 
