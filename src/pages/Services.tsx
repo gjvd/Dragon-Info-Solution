@@ -19,7 +19,6 @@ import {
     Terminal,
     Tablet,
     PenTool,
-    Video,
     CheckCircle,
     Bug,
     TrendingUp,
@@ -135,23 +134,33 @@ const Services = () => {
 
     const serviceCategories = [
         {
-            title: "Core Offerings",
-            icon: Code,
+            title: "Web Development",
+            icon: Globe,
             items: [
-                { name: "Web Development", icon: Globe, desc: "Responsive, high-performance websites tailored to your brand." },
-                { name: "App Development", icon: Smartphone, desc: "Native and cross-platform mobile applications for iOS and Android." },
-                { name: "UI/UX Design", icon: Palette, desc: "Intuitive and engaging user interfaces that drive conversion." },
-                { name: "Web Design", icon: Layout, desc: "Modern and aesthetic designs that captivate your audience." }
+                { name: "Full Stack", icon: Layers, desc: "End-to-end web solutions including MERN and MEAN stack development." },
+                { name: "Front End", icon: Monitor, desc: "Engaging user interfaces using React, Vue, or Angular." },
+                { name: "Back End", icon: Server, desc: "Robust server-side architecture and API development." }
+            ]
+        },
+        {
+            title: "Mobile Development",
+            icon: Smartphone,
+            items: [
+                { name: "React Native", icon: Smartphone, desc: "Cross-platform mobile apps with a native feel." },
+                { name: "Flutter", icon: Smartphone, desc: "Beautiful, natively compiled applications from a single codebase." },
+                { name: "iOS", icon: Tablet, desc: "Native iOS development for Apple's ecosystem." },
+                { name: "Android", icon: Smartphone, desc: "Native Android development for wide reach." },
+                { name: "Swift & Kotlin", icon: Code, desc: "Modern languages for robust native mobile performance." }
             ]
         },
         {
             title: "Design Services",
             icon: Palette,
             items: [
+                { name: "Logo Design", icon: PenTool, desc: "Unique and memorable brand identities." },
+                { name: "Brochure Design", icon: Layout, desc: "Professional marketing materials and print designs." },
                 { name: "UI/UX", icon: Palette, desc: "User-centric design flows and wireframes." },
-                { name: "Graphics", icon: PenTool, desc: "Visual assets, branding, and marketing materials." },
-                { name: "Web Design", icon: Layout, desc: "Website aesthetics and responsive layouts." },
-                { name: "Video Editing", icon: Video, desc: "Professional video production and post-processing." }
+                { name: "Web Design", icon: Layout, desc: "Website aesthetics and responsive layouts." }
             ]
         },
         {
@@ -160,7 +169,6 @@ const Services = () => {
             items: [
                 { name: ".NET", icon: Code, desc: "Robust enterprise solutions using the Microsoft ecosystem." },
                 { name: "JAVA", icon: Coffee, desc: "Scalable, secure, and reliable backend systems." },
-                { name: "Python", icon: Terminal, desc: "Versatile development for web, data science, and automation." },
                 { name: "AI/ML", icon: Brain, desc: "Intelligent solutions incorporating Artificial Intelligence and Machine Learning." }
             ]
         },
@@ -201,26 +209,6 @@ const Services = () => {
                 { name: "Hybrid Model", icon: Users, desc: "A balanced approach of onsite and remote working professionals." },
                 { name: "Per-Hire", icon: UserPlus, desc: "Focused recruitment for specific critical roles." },
                 { name: "Bulk Hiring", icon: Users, desc: "Mass recruitment drives to scale your workforce quickly." }
-            ]
-        },
-        {
-            title: "Web Development",
-            icon: Globe,
-            items: [
-                { name: "MERN | MEAN Stack", icon: Layers, desc: "Full-stack JavaScript development (MongoDB, Express, React/Angular, Node)." },
-                { name: "Front End", icon: Monitor, desc: "Engaging user interfaces using React, Vue, or Angular." },
-                { name: "Back End", icon: Server, desc: "Robust server-side architecture and API development." }
-            ]
-        },
-        {
-            title: "Mobile Development",
-            icon: Smartphone,
-            items: [
-                { name: "React Native", icon: Smartphone, desc: "Cross-platform mobile apps with a native feel." },
-                { name: "Flutter", icon: Smartphone, desc: "Beautiful, natively compiled applications from a single codebase." },
-                { name: "iOS", icon: Tablet, desc: "Native iOS development for Apple's ecosystem." },
-                { name: "Android", icon: Smartphone, desc: "Native Android development for wide reach." },
-                { name: "Swift & Kotlin", icon: Code, desc: "Modern languages for robust native mobile performance." }
             ]
         }
     ];
