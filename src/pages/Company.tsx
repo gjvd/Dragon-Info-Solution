@@ -11,10 +11,10 @@ const Company = () => {
     ];
 
     const stats = [
+        { label: "Years Experience", value: "7+", icon: Briefcase, color: "text-purple-400" },
         { label: "Projects Completed", value: "100+", icon: CheckCircle2, color: "text-blue-400" },
         { label: "Client Satisfaction", value: "98%", icon: Star, color: "text-yellow-400" },
-        { label: "Client Retention", value: "85%", icon: Repeat, color: "text-green-400" },
-        { label: "Years Experience", value: "7+", icon: Briefcase, color: "text-purple-400" }
+        { label: "Client Retention", value: "85%", icon: Repeat, color: "text-green-400" }
     ];
 
     const testimonials = [

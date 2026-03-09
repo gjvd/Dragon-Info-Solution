@@ -25,7 +25,9 @@ import {
     Megaphone,
     Search,
     Layers,
-    ChevronRight
+    ChevronRight,
+    Video,
+    Image
 } from 'lucide-react';
 import CTASection from '../components/CTASection';
 import bgGradient from '../assets/images/bg-4.svg';
@@ -138,8 +140,8 @@ const Services = () => {
             icon: Globe,
             items: [
                 { name: "Full Stack", icon: Layers, desc: "End-to-end web solutions including MERN and MEAN stack development." },
-                { name: "Front End", icon: Monitor, desc: "Engaging user interfaces using React, Vue, or Angular." },
-                { name: "Back End", icon: Server, desc: "Robust server-side architecture and API development." }
+                { name: "Front End", icon: Monitor, desc: "Using React, Next.js, Vue, Angular, Tailwind CSS, & Material UI." },
+                { name: "Back End", icon: Server, desc: "Powered by Node.js, Express, Python (Django/Flask), Go, PHP (Laravel), & SQL/NoSQL." }
             ]
         },
         {
@@ -158,6 +160,8 @@ const Services = () => {
             icon: Palette,
             items: [
                 { name: "Logo Design", icon: PenTool, desc: "Unique and memorable brand identities." },
+                { name: "Graphics Design", icon: Image, desc: "Creative visual content for digital and print media." },
+                { name: "Video Editing", icon: Video, desc: "Professional video post-production and motion graphics." },
                 { name: "Brochure Design", icon: Layout, desc: "Professional marketing materials and print designs." },
                 { name: "UI/UX", icon: Palette, desc: "User-centric design flows and wireframes." },
                 { name: "Web Design", icon: Layout, desc: "Website aesthetics and responsive layouts." }

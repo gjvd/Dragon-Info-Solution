@@ -9,7 +9,7 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-r from-black to-blue-900 text-white antialiased;
+    @apply bg-gradient-to-r from-black via-[#0a0a2e] to-brand-blue text-white antialiased;
   }
 }
 
