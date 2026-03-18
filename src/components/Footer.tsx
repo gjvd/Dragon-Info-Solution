@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'luc
 
 const Footer = () => {
     return (
-        <footer className="bg-[#020210] py-16 border-t border-white/5 relative overflow-hidden">
+        <footer className="bg-black/30 backdrop-blur-sm py-16 border-t border-white/5 relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-blue-900/5 to-transparent pointer-events-none"></div>
 

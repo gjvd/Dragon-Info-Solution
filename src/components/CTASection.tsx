@@ -4,7 +4,7 @@ import { ArrowRight, Flame } from 'lucide-react';
 
 const CTASection = () => {
     return (
-        <section className="py-20 bg-[#05051a] border-t border-white/5 relative overflow-hidden">
+        <section className="py-20 bg-black/10 backdrop-blur-sm border-t border-white/5 relative overflow-hidden">
             <div className="absolute inset-0 bg-blue-600/5 blur-[100px] pointer-events-none"></div>
 
             <div className="container mx-auto px-6 relative z-10 text-center">
