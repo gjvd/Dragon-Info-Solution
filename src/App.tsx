@@ -32,7 +32,7 @@ function App() {
         <Router>
             <ScrollToTop />
             <TawkToWidget />
-            <div className="min-h-screen bg-black text-white selection:bg-blue-500/30 flex flex-col">
+            <div className="min-h-screen text-white selection:bg-blue-500/30 flex flex-col">
                 <Navbar />
                 <main className="flex-grow">
                     <Routes>
